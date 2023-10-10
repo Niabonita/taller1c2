@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <title>Gestión de Inventario</title>
+    <script src="../js/utilidades1.js"></script>
+</head>
+
+<body>
+
+    
+        <fieldset>
+            <center>
+            <h1>Niabonita</h1>
+            <h4>Inventario de productos</h4>
+            <img src="https://img.freepik.com/vector-gratis/linda-chica-gato-empacando-productos-cajas-personaje-dibujos-animados-dibujar-mano-ilustracion-arte_56104-2282.jpg?w=740&t=st=1696800726~exp=1696801326~hmac=d0337a602ed92fbda9b014d146b6e498de78610339eedff8c219c1b476e6cb51" alt="" width="150">
+            </center>
+            <fieldset>
+                <legend>
+                    <h2>Añadir producto</h2>
+                </legend>
+                <form id="addProductForm">
+                    <label for="productName">
+                        Nombre del producto:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="productName" required><br>
+                    <label for="productPrice">
+                        Precio por unidad:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="productPrice" required><br>
+                    <label for="productStock">
+                        Stock (Cantidad disponible):
+                    </label>
+                    &nbsp;<input type="number" id="productStock" required><br>
+                    <button type="button" onclick="agregarProducto()">
+                        Agregar
+                    </button>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Registrar venta</h2>
+                </legend>
+                <form id="sellProductForm">
+                    <label for="productToSell">
+                        Producto vendido:
+                    </label>
+                    <input type="text" id="productToSell" required><br>
+                    <label for="quantitySold">
+                        Cantidad:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="quantitySold" required><br>
+                    <button type="button" onclick="registrarVenta()">
+                        Registrar
+                    </button>
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Estado del Inventario</h2>
+                </legend>
+                <div id="estadoInventario"></div>
+            </fieldset>
+        </fieldset>
+    
+
+</body>
+
+</html>

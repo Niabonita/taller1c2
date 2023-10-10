@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <script src="../js/utilidades3.js"></script>
+    <title>Generador de Gráfico de Barras</title>
+</head>
+
+<body>
+    <fieldset>
+        <center>
+            <h1>Nia's BarGraph</h1>
+            <img src="https://img.freepik.com/vector-gratis/joven-empresaria-que-muestra-ilustracion-dibujos-animados-pizarra-blanca-presentador_56104-519.jpg?w=740&t=st=1696804787~exp=1696805387~hmac=0ae570f41ac73b6bf02b552fa94a47bebfb4a81e52a04631e0316786611dbe42"
+                alt="" width="150">
+        </center>
+        <form id="dataForm">
+            <h3>Los datos ingresados deben ir separados por comas</h3>
+            <fieldset>
+                <legend>
+                    <h3>Ingresar datos</h3>
+                </legend>
+                <label for="data"></label>
+                <input type="text" id="data" required><br><br>
+                <button type="button" onclick="generarGrafico()" >Generar Gráfico</button>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>
+                <h3>Gráfico de Barras:</h3>
+            </legend>
+            <pre id="barChart"></pre>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>

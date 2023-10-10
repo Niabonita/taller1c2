@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <title>Generador de tarjetas de presentación</title>
+    <script src="../js/utilidades2.js"></script>
+</head>
+
+<body>
+    <center>
+        <fieldset>
+
+            <h1>Nia's CardCrafters</h1>
+            <img src="https://img.freepik.com/vector-gratis/linda-chica-cartel-vacio-banner-dibujado-mano-ilustracion-arte-dibujos-animados_56104-1348.jpg?w=740&t=st=1696801043~exp=1696801643~hmac=7a2ecb3b56e21c092eae62e9d15a779a2ad29824733da9acfcf745112bbdde31"
+                alt="" width="130">
+            <fieldset>
+                <legend><h2>Ingresar  datos</h2></legend>
+                <form id="businessCardForm">
+                    <label for="name">
+                        Nombre:
+                    </label>
+                    &nbsp;&nbsp;<input type="text" id="name" required><br>
+                    <label for="jobTitle">
+                        Cargo:
+                    </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="jobTitle" required><br>
+                    <label for="company">
+                        Empresa:
+                    </label>
+                    &nbsp;<input type="text" id="company" required><br>
+                    <label for="contact">
+                        Contacto:
+                    </label>
+                    &nbsp;<input type="email" id="contact" required><br>
+                    <button type="button" onclick="generarTarjeta()">
+                        Generar
+                    </button>
+                </form>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Tarjeta de presentación:</h2>
+                </legend>
+                <div id="businessCard"></div>
+            </fieldset>
+        </fieldset>
+        
+    </center>
+</body>
+
+</html>

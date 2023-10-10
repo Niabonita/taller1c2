@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <script src="../js/utilidades7.js"></script>
+    <title>Generador de contratos</title>
+</head>
+<body>
+    <fieldset>
+        <center>
+            <h3>Generador de contratos</h3>
+        </center>
+        <fieldset>
+            <legend><strong>Ingresar datos</strong></legend>
+            <form id="contractForm">
+                <label for="clientName">Nombre del cliente:</label>
+                <input type="text" id="clientName" required><br>
+                
+                <label for="startDate">Fecha de inicio:</label>
+                <input type="date" id="startDate" required><br>
+                
+                <label for="termsAndConditions">Términos y condiciones:</label><br>
+                <textarea id="termsAndConditions" rows="2" cols="30" required></textarea><br>
+                
+                <button type="button" onclick="generarContrato()">Generar Contrato</button>
+            </form>
+        </fieldset><br>
+        <fieldset>
+            <legend><strong>Contrato Legal:</strong></legend>
+            <pre id="contractText"></pre>
+        </fieldset>
+        
+    </fieldset>
+    
+</body>
+</html>

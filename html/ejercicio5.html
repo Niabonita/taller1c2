@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niabonita">
+    <script src="../js/utilidades5.js"></script>
+    <title>Juego de Adivinanza de Palabras</title>
+</head>
+
+<body>
+    <fieldset>
+        <center>
+            <h1>ADIVINA LA PALABRA </h1>
+            <p>(versión lenguajes de programación)</p>
+            <img src="https://img.freepik.com/vector-gratis/joven-empresaria-sosteniendo-tableta-pulgar-arriba-ilustracion-dibujos-animados_56104-509.jpg?w=740&t=st=1696821783~exp=1696822383~hmac=5f421439471fd8bfe2b438602fa89bed487a7ca7d611dd0e3896bd210a89de09"
+                alt="" width="150">
+        </center>
+        <fieldset>
+            <legend>
+                <h2>Palabra acertada:</h2>
+            </legend>
+            <div id="wordToGuess"></div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Letras ingresadas:</h2>
+            </legend>
+            <div id="guessedLetters"></div>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Intentos máximos:</h2>
+                10
+            </legend>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Intentos restantes:</h2>
+                <span id="remainingGuesses">10</span>
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <legend><h2>Juega aquí:</h2></legend>
+            <table>
+                <tr>
+                    <td>
+                        <p>Inserte una letra:</p>
+                        <input type="text" id="letterInput">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td>
+                        <p>Adivine la palabra completa:</p>
+                        <input type="text" id="wordInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="adivinarLetra()">Adivinar letra
+                        </button>
+                    </td>
+                    <td>
+                        <button onclick="adivinarPalabra()">Adivinar palabra</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </fieldset>
+
+</body>
+
+</html>
